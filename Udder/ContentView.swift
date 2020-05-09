@@ -10,15 +10,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-                VStack {
+        VStack {
             VStack {
-                Text("UDDER!")
-                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                Text("Vidalokkca")
+                VStack {
+                    VStack {
+                        Text("UDDER!")
+                            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                        Text("Vidalokkca")
+                    }
+                    Slider(value: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant(10)/*@END_MENU_TOKEN@*/)
+                }
+                
             }
-            Slider(value: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant(10)/*@END_MENU_TOKEN@*/)
+            Ellipse()
+                .frame(width: 100.0, height: 100.0)
         }
 }
 }
